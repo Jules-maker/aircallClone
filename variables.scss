@@ -1,0 +1,30 @@
+// $gutter: 32px;
+$gutter: 24px;
+
+$large: 1025px;
+$medium: 769px;
+$small: 480px;
+
+$siteWidth: 1224px;
+$board: 1512px;
+
+$viewportIncrement: 1px;
+
+$postSmall: $small + $viewportIncrement;
+$preMedium: $medium - $viewportIncrement;
+$preLarge: $large - $viewportIncrement;
+
+$min: min-width;
+$max: max-width;
+
+$breakpoints: (
+  "xs" "(#{$max}: #{$small})",
+  "sm" "(#{$min}: #{$postSmall}) and (#{$max}: #{$preMedium})",
+  "md" "(#{$min}: #{$medium}) and (#{$max}: #{$preLarge})",
+  "lg" "(min-width: #{$large})"
+);
+
+$breakpoint-has-widths: ("xs", "sm", "md", "lg");
+$breakpoint-has-push: ("xs", "sm", "md", "lg");
+$breakpoint-has-pull: ("xs", "sm", "md", "lg");
+$breakpoint-has-hidden: ("xs", "sm", "md", "lg");
