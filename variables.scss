@@ -4,7 +4,7 @@ $gutter: 24px;
 $large: 1025px;
 $medium: 769px;
 $small: 480px;
-
+$background: #06AB78;
 $siteWidth: 1224px;
 $board: 1512px;
 
@@ -17,17 +17,17 @@ $preLarge: $large - $viewportIncrement;
 $min: min-width;
 $max: max-width;
 
-$breakpoints: (
-  "xs" "(#{$max}: #{$small})",
-  "sm" "(#{$min}: #{$postSmall}) and (#{$max}: #{$preMedium})",
-  "md" "(#{$min}: #{$medium}) and (#{$max}: #{$preLarge})",
-  "lg" "(min-width: #{$large})"
-);
+// $breakpoints: (
+//   "xs" "(#{$max}: #{$small})",
+//   "sm" "(#{$min}: #{$postSmall}) and (#{$max}: #{$preMedium})",
+//   "md" "(#{$min}: #{$medium}) and (#{$max}: #{$preLarge})",
+//   "lg" "(min-width: #{$large})"
+// );
 
-$breakpoint-has-widths: ("xs", "sm", "md", "lg");
-$breakpoint-has-push: ("xs", "sm", "md", "lg");
-$breakpoint-has-pull: ("xs", "sm", "md", "lg");
-$breakpoint-has-hidden: ("xs", "sm", "md", "lg");
+// $breakpoint-has-widths: ("xs", "sm", "md", "lg");
+// $breakpoint-has-push: ("xs", "sm", "md", "lg");
+// $breakpoint-has-pull: ("xs", "sm", "md", "lg");
+// $breakpoint-has-hidden: ("xs", "sm", "md", "lg");
 :root{
     --cc-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --cc-font-size: 16px;
@@ -123,6 +123,6 @@ $breakpoint-has-hidden: ("xs", "sm", "md", "lg");
     // display: flex;
     // align-items: center;
     // height: var(--nav-header-height);
-    // background: var(--green-700);
+    background: var(--green-700);
     // color: var(--white);
     }

@@ -81,4 +81,5 @@
   --glass-fill: linear-gradient(129deg,rgba(var(--white-rgb),0.2) 0%,rgba(var(--white-rgb),0.1) 100%);
   --glass-fill-background-filter: blur(5px);
   font-family: "Fellix", sans-serif;
+  background: var(--green-700);
 }/*# sourceMappingURL=variables.css.map */
